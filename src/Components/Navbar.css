@@ -1,0 +1,142 @@
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar .logo {
+    width: 150px;
+  }
+  
+  /* Hide Mobile Menu by Default */
+  .mobile-menu {
+    display: none;
+  }
+  
+  /* Desktop Navbar Menu */
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    color: #49557e;
+  }
+  
+  /* Navbar Right (Large Screens) */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    /* border: 1px solid tomato; */
+    /* padding: 10px 30px; */
+    /* border-radius: 50px; */
+    cursor: pointer;
+    transition: 0.3s;
+
+  }
+  
+  .navbar button:hover {
+    background-color: #fff4f2;
+  }
+  
+  .navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+  }
+  
+  .navbar li {
+    cursor: pointer;
+  }
+  
+  .navbar-search-icon {
+    position: relative;
+  }
+  
+  .navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    left: 30px;
+  }
+  
+  /* Menu Button for Mobile
+  .menu-button {
+    display: none;
+    cursor: pointer;
+    
+    
+  }
+  
+  .menu-button  {
+    width: 70px;
+    border:none;
+
+  } */
+  
+  /* Responsive Design */
+  @media (max-width: 750px) {
+    .menu-button {
+      display: block;
+    }
+  
+    /* Hide Desktop Navbar Menu & Right Section */
+    .navbar-menu,
+    .navbar-right {
+      display: none;
+    }
+  
+    /* Mobile Navigation */
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      background: rgb(221, 220, 220);
+      padding: 20px;
+      z-index: 10;
+      text-align: center;
+    }
+  
+    .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .mobile-menu a {
+      padding: 10px 0;
+      font-size: 18px;
+      color: #49557e;
+    }
+  
+    /* Mobile Navbar Right */
+    .mobile-navbar-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+  
+    .mobile-navbar-right img {
+      width: 22px;
+    }
+  
+    .mobile-navbar-right button {
+      padding: 8px 25px;
+      font-size: 16px;
+    }
+  }
+  
