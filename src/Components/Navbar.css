@@ -140,3 +140,9 @@
     }
   }
   
+  @media (min-width: 768px) { /* Adjust breakpoint as needed */
+    .menu-button {
+      display: none;
+    }
+  }
+  
